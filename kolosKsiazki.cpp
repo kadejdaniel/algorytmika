@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int n = 4;
+const int n = 5;
 
 struct ksiazka {
     string tytul;
