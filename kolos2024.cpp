@@ -40,6 +40,7 @@ int flagaPolska(Student *x, int n, double granica) {
             i++;
         }
         while (!czyZdal(x[j]) && i < j) {
+            j--;
         }
         if (i < j) {
             swap(x[i], x[j]);
@@ -72,7 +73,7 @@ int main () {
     pobierz(student,liczbaStudentow);
     int zdani = flagaPolska(student,liczbaStudentow,4);
     cout << "studenci ktorzy ZDALI wszystko" << endl;
-    wypisz(student,liczbaStudentow);
+    wypisz(student,zdani);
     cout << "studenci ktorzy NIE ZDALI chociaz jednego" << endl;
     wypisz(student+zdani,liczbaStudentow-zdani);
     return 0;
