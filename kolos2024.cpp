@@ -53,7 +53,7 @@ int flagaPolska(Student *x, int n, double granica) {
         return i;
     }
 }
-
+//
 void wypisz(Student *tab, int n) {
     for (int i = 0; i < n; i++) {
         cout << "Indeks: " << tab[i].indeks << " Oceny: ";
